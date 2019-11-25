@@ -864,23 +864,6 @@ static EmberCommandEntry emberCommandPluginDmpTuningTable[] = {
   emberCommandEntrySubMenu("zigbee", emberCommandPluginDmpTuningZigbeeTable, ""),
   emberCommandEntryTerminator(),
 };
-void emAfEepromDataPrintCommand(void);
-#if defined(EMBER_COMMAND_INTEPRETER_HAS_DESCRIPTION_FIELD)
-static const char * const pluginEepromDataPrintCommandArguments[] = {
-  "The offset within the EEPROM to print.",
-  NULL
-};
-#endif
-
-
-void emAfEepromInfoCommand(void);
-void emAfEepromStatusCommand(void);
-static EmberCommandEntry emberCommandPluginEepromTable[] = {
-  emberCommandEntryActionWithDetails("data-print", emAfEepromDataPrintCommand, "w", "Print raw bytes stored in the EEPROM", pluginEepromDataPrintCommandArguments),
-  emberCommandEntryActionWithDetails("info", emAfEepromInfoCommand, "", "Print detailed info about the EEPROM part.", NULL),
-  emberCommandEntryActionWithDetails("status", emAfEepromStatusCommand, "", "Print the state of the EEPROM driver.", NULL),
-  emberCommandEntryTerminator(),
-};
 void emberAfPluginEndDeviceSupportForceShortPollCommand(void);
 #if defined(EMBER_COMMAND_INTEPRETER_HAS_DESCRIPTION_FIELD)
 static const char * const pluginEndDeviceSupportForceShortPollCommandArguments[] = {
@@ -1248,7 +1231,6 @@ static EmberCommandEntry emberCommandPluginTable[] = {
   emberCommandEntrySubMenu("counter", emberCommandPluginCounterTable, ""),
   emberCommandEntrySubMenu("counters", emberCommandPluginCountersTable, ""),
   emberCommandEntrySubMenu("dmp-tuning", emberCommandPluginDmpTuningTable, ""),
-  emberCommandEntrySubMenu("eeprom", emberCommandPluginEepromTable, ""),
   emberCommandEntrySubMenu("end-device-support", emberCommandPluginEndDeviceSupportTable, ""),
   emberCommandEntrySubMenu("find-and-bind", emberCommandPluginFindAndBindTable, ""),
   emberCommandEntrySubMenu("groups-server", emberCommandPluginGroupsServerTable, ""),

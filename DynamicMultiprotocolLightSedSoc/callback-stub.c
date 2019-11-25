@@ -7,10 +7,7 @@
 // of the callbacks have not been provided.
 #include "app/framework/include/af.h"
 #include "rtos_bluetooth.h"
-#include PLATFORM_HEADER
-#include CONFIGURATION_HEADER
 #include "hal/hal.h"
-#include EMBER_AF_API_EEPROM
 #include EMBER_AF_API_NETWORK_STEERING
 
 
@@ -257,6 +254,36 @@ bool emberAfDiscoverCommandsReceivedResponseCallback(EmberAfClusterId clusterId,
                                                      uint16_t commandIdCount)
 {
   return false;
+}
+
+/** @brief Eeprom Init
+ *
+ * Tells the system to initialize the EEPROM if it is not already initialized.
+ *
+ */
+void emberAfEepromInitCallback(void)
+{
+}
+
+/** @brief Eeprom Note Initialized State
+ *
+ * Records the state of the EEPROM so that an intelligent driver (like the
+ * EEPROM plugin) can re-initialize the driver prior to any calls to it.
+ *
+ * @param state The state of the EEPROM, false=re-initalization needed,
+ * true=no-re-init needed  Ver.: always
+ */
+void emberAfEepromNoteInitializedStateCallback(bool state)
+{
+}
+
+/** @brief Eeprom Shutdown
+ *
+ * Tells the system to shutdown the EEPROM if it is not already shutdown.
+ *
+ */
+void emberAfEepromShutdownCallback(void)
+{
 }
 
 /** @brief External Attribute Read
@@ -1458,17 +1485,6 @@ bool emberAfPerformingKeyEstablishmentCallback(void)
  * @param type The counter that rolled over Ver.: always
  */
 void emberAfPluginCountersRolloverCallback(EmberCounterType type)
-{
-}
-
-
-/** @brief Called whenever the EEPROM changes state
- *
- * @param oldEepromState The old state of the EEPROM
- * @param newEepromState The new state of the EEPROM
- * 
- */
-void emberAfPluginEepromStateChangeCallback(HalEepromState oldEepromState, HalEepromState newEepromState)
 {
 }
 

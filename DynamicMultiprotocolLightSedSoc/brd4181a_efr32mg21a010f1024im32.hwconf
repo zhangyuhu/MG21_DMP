@@ -40,21 +40,20 @@
     <property object="PORTIO" propertyId="portio.pti.enable.dout" value="Enabled"/>
     <property object="PORTIO" propertyId="portio.pti.location.frc_dframeloc" value="37"/>
     <property object="PORTIO" propertyId="portio.pti.location.frc_doutloc" value="36"/>
-    <property object="PORTIO" propertyId="portio.usart0.enable.cts" value="Enabled"/>
-    <property object="PORTIO" propertyId="portio.usart0.enable.rts" value="Enabled"/>
     <property object="PORTIO" propertyId="portio.usart0.enable.rx" value="Enabled"/>
     <property object="PORTIO" propertyId="portio.usart0.enable.tx" value="Enabled"/>
     <property object="PORTIO" propertyId="portio.usart0.location.usart0_ctsloc" value="4"/>
     <property object="PORTIO" propertyId="portio.usart0.location.usart0_rtsloc" value="33"/>
-    <property object="PORTIO" propertyId="portio.usart0.location.usart0_rxloc" value="6"/>
-    <property object="PORTIO" propertyId="portio.usart0.location.usart0_txloc" value="5"/>
+    <property object="PORTIO" propertyId="portio.usart0.location.usart0_rxloc" value="33"/>
+    <property object="PORTIO" propertyId="portio.usart0.location.usart0_txloc" value="32"/>
     <property object="PORTIO" propertyId="portio.usart2.enable.clk" value="Enabled"/>
     <property object="PORTIO" propertyId="portio.usart2.enable.cs" value="Enabled"/>
     <property object="PORTIO" propertyId="portio.usart2.enable.rx" value="Enabled"/>
     <property object="PORTIO" propertyId="portio.usart2.enable.tx" value="Enabled"/>
-    <property object="PORTIO" propertyId="portio.usart2.location.usart2_clkloc" value="34"/>
-    <property object="PORTIO" propertyId="portio.usart2.location.usart2_csloc" value="35"/>
-    <property object="PORTIO" propertyId="portio.usart2.location.usart2_rxloc" value="33"/>
+    <property object="PORTIO" propertyId="portio.usart2.location.usart2_clkloc" value="36"/>
+    <property object="PORTIO" propertyId="portio.usart2.location.usart2_csloc" value="37"/>
+    <property object="PORTIO" propertyId="portio.usart2.location.usart2_rxloc" value="35"/>
+    <property object="PORTIO" propertyId="portio.usart2.location.usart2_txloc" value="34"/>
     <property object="PRS" propertyId="PRS.BSP_PRS_CH4.PIN" value="PA00"/>
     <property object="PRS" propertyId="PRS.custom_name_CH4.STRING" value="SPIDISPLAY_EXTCOMIN"/>
     <property object="PTI" propertyId="ABPeripheral.included" value="true"/>
@@ -78,12 +77,10 @@
     <property object="SPINCP" propertyId="SPINCP.BSP_SPINCP_USART_PORT.MOD" value="USART2"/>
     <property object="UARTNCP" propertyId="UARTNCP.BSP_UARTNCP_USART_PORT.MOD" value="USART0"/>
     <property object="USART0" propertyId="ABPeripheral.included" value="true"/>
-    <property object="USART0" propertyId="USART.BSP_USART_CTS.PIN" value="PA04"/>
-    <property object="USART0" propertyId="USART.BSP_USART_MISO.PIN" value="PA06"/>
-    <property object="USART0" propertyId="USART.BSP_USART_MOSI.PIN" value="PA05"/>
-    <property object="USART0" propertyId="USART.BSP_USART_RTS.PIN" value="PC01"/>
-    <property object="USART0" propertyId="USART.BSP_USART_RX.PIN" value="PA06"/>
-    <property object="USART0" propertyId="USART.BSP_USART_TX.PIN" value="PA05"/>
+    <property object="USART0" propertyId="USART.BSP_USART_MISO.PIN" value="PC01"/>
+    <property object="USART0" propertyId="USART.BSP_USART_MOSI.PIN" value="PC00"/>
+    <property object="USART0" propertyId="USART.BSP_USART_RX.PIN" value="PC01"/>
+    <property object="USART0" propertyId="USART.BSP_USART_TX.PIN" value="PC00"/>
     <property object="USART0" propertyId="USART.HAL_USART_RXSTART.INT" value="16"/>
     <property object="USART0" propertyId="USART.HAL_USART_RXSTOP.INT" value="16"/>
     <property object="USART0" propertyId="USART.HAL_USART_RX_QUEUE_SIZE.INT" value="128"/>
@@ -96,12 +93,12 @@
     <property object="USART1" propertyId="USART.HAL_USART_TX_QUEUE_SIZE.INT" value="128"/>
     <property object="USART1" propertyId="USART.showadvanced.BOOL" value="1"/>
     <property object="USART2" propertyId="ABPeripheral.included" value="true"/>
-    <property object="USART2" propertyId="USART.BSP_USART_CLK.PIN" value="PC02"/>
-    <property object="USART2" propertyId="USART.BSP_USART_CS.PIN" value="PC03"/>
-    <property object="USART2" propertyId="USART.BSP_USART_MISO.PIN" value="PC01"/>
-    <property object="USART2" propertyId="USART.BSP_USART_MOSI.PIN" value="PC00"/>
-    <property object="USART2" propertyId="USART.BSP_USART_RX.PIN" value="PC01"/>
-    <property object="USART2" propertyId="USART.BSP_USART_TX.PIN" value="PC00"/>
+    <property object="USART2" propertyId="USART.BSP_USART_CLK.PIN" value="PC04"/>
+    <property object="USART2" propertyId="USART.BSP_USART_CS.PIN" value="PC05"/>
+    <property object="USART2" propertyId="USART.BSP_USART_MISO.PIN" value="PC03"/>
+    <property object="USART2" propertyId="USART.BSP_USART_MOSI.PIN" value="PC02"/>
+    <property object="USART2" propertyId="USART.BSP_USART_RX.PIN" value="PC03"/>
+    <property object="USART2" propertyId="USART.BSP_USART_TX.PIN" value="PC02"/>
     <property object="USART2" propertyId="USART.HAL_USART_FLOW_CONTROL.ENUM" value="HAL_USART_FLOW_CONTROL_HWUART"/>
     <property object="USART2" propertyId="USART.HAL_USART_RXSTART.INT" value="16"/>
     <property object="USART2" propertyId="USART.HAL_USART_RXSTOP.INT" value="16"/>

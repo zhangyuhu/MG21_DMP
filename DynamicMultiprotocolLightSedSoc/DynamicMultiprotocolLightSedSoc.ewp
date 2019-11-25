@@ -1336,10 +1336,7 @@
 <file><name>$PROJ_DIR$/../../../../../../SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/Siliconlabs_DMP_SDK/platform\base\hal\plugin\debug-jtag-stub\debug-jtag-stub.c</name></file>
 <file><name>$PROJ_DIR$/../../../../../../SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/Siliconlabs_DMP_SDK/protocol\zigbee\app\framework\plugin-soc\dmp-tuning\dmp-tuning.c</name></file>
 <file><name>$PROJ_DIR$/../../../../../../SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/Siliconlabs_DMP_SDK/protocol\zigbee\app\framework\plugin-soc\dmp-tuning\dmp-tuning-cli.c</name></file>
-<file><name>$PROJ_DIR$/../../../../../../SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/Siliconlabs_DMP_SDK/protocol\zigbee\app\framework\plugin\dmp-ui-demo\dmp-ui.c</name></file>
-<file><name>$PROJ_DIR$/../../../../../../SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/Siliconlabs_DMP_SDK/util\plugin\plugin-common\eeprom\eeprom.c</name></file>
-<file><name>$PROJ_DIR$/../../../../../../SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/Siliconlabs_DMP_SDK/util\plugin\plugin-afv2\eeprom\eeprom-afv2.c</name></file>
-<file><name>$PROJ_DIR$/../../../../../../SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/Siliconlabs_DMP_SDK/util\plugin\plugin-common\eeprom\eeprom-cli.c</name></file>
+<file><name>$PROJ_DIR$/../../../../../../SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/Siliconlabs_DMP_SDK/protocol\zigbee\app\framework\plugin\dmp-ui-demo-stub\dmp-ui-stub.c</name></file>
 <file><name>$PROJ_DIR$/../../../../../../SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/Siliconlabs_DMP_SDK/platform\base\hal\plugin\serial\ember-printf.c</name></file>
 <file><name>$PROJ_DIR$/../../../../../../SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/Siliconlabs_DMP_SDK/protocol\zigbee\app\framework\plugin\end-device-support\end-device-support.c</name></file>
 <file><name>$PROJ_DIR$/../../../../../../SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/Siliconlabs_DMP_SDK/protocol\zigbee\app\framework\plugin\end-device-support\end-device-move.c</name></file>

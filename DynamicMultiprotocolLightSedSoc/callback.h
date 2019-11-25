@@ -17,10 +17,7 @@
 
 #include "app/framework/include/af-types.h"
 #include "rtos_bluetooth.h"
-#include PLATFORM_HEADER
-#include CONFIGURATION_HEADER
 #include "hal/hal.h"
-#include EMBER_AF_API_EEPROM
 #include EMBER_AF_API_NETWORK_STEERING
 
 
@@ -26350,19 +26347,6 @@ bool emberAfSlWwahClusterUseTrustCenterForClusterServerResponseCallback(uint8_t 
                                                                            uint8_t* clusterStatus);
 
 /** @} END SL Works With All Hubs Cluster Callbacks */
-
-
-/** @name EEPROM Plugin Callbacks */
-// @{
-
-/** @brief Called whenever the EEPROM changes state
- *
- * @param oldEepromState The old state of the EEPROM
- * @param newEepromState The new state of the EEPROM
- * 
- */
-void emberAfPluginEepromStateChangeCallback(HalEepromState oldEepromState, HalEepromState newEepromState);
-/** @} END EEPROM Plugin Callbacks */
 
 
 /** @name End Device Support Plugin Callbacks */

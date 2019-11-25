@@ -162,17 +162,11 @@
 #define HAL_SERIAL_USART0_ENABLE                      (0)
 #define HAL_SERIAL_USART1_ENABLE                      (0)
 #define HAL_SERIAL_USART2_ENABLE                      (0)
-#define BSP_SERIAL_APP_TX_PIN                         (5U)
-#define BSP_SERIAL_APP_TX_PORT                        (gpioPortA)
+#define BSP_SERIAL_APP_TX_PIN                         (0U)
+#define BSP_SERIAL_APP_TX_PORT                        (gpioPortC)
 
-#define BSP_SERIAL_APP_RX_PIN                         (6U)
-#define BSP_SERIAL_APP_RX_PORT                        (gpioPortA)
-
-#define BSP_SERIAL_APP_CTS_PIN                        (4U)
-#define BSP_SERIAL_APP_CTS_PORT                       (gpioPortA)
-
-#define BSP_SERIAL_APP_RTS_PIN                        (1U)
-#define BSP_SERIAL_APP_RTS_PORT                       (gpioPortC)
+#define BSP_SERIAL_APP_RX_PIN                         (1U)
+#define BSP_SERIAL_APP_RX_PORT                        (gpioPortC)
 
 #define HAL_SERIAL_APP_BAUD_RATE                      (115200UL)
 #define HAL_SERIAL_APP_FLOW_CONTROL                   (HAL_USART_FLOW_CONTROL_NONE)
@@ -202,13 +196,13 @@
 #define HAL_SPIDISPLAY_EXTCOMIN_CALLBACK               rtcIntCallbackRegister
 #define HAL_SPIDISPLAY_EXTCOMIN_USE_PRS               (0)
 #define BSP_SPIDISPLAY_EXTCOMIN_CHANNEL               (4)
-#define BSP_SPIDISPLAY_MOSI_PIN                       (0U)
+#define BSP_SPIDISPLAY_MOSI_PIN                       (2U)
 #define BSP_SPIDISPLAY_MOSI_PORT                      (gpioPortC)
 
-#define BSP_SPIDISPLAY_MISO_PIN                       (1U)
+#define BSP_SPIDISPLAY_MISO_PIN                       (3U)
 #define BSP_SPIDISPLAY_MISO_PORT                      (gpioPortC)
 
-#define BSP_SPIDISPLAY_CLK_PIN                        (2U)
+#define BSP_SPIDISPLAY_CLK_PIN                        (4U)
 #define BSP_SPIDISPLAY_CLK_PORT                       (gpioPortC)
 
 #define HAL_SPIDISPLAY_FREQUENCY                      (1000000UL)
@@ -233,31 +227,19 @@
 // [UARTNCP]$
 
 // $[USART0]
-#define PORTIO_USART0_CTS_PIN                         (4U)
-#define PORTIO_USART0_CTS_PORT                        (gpioPortA)
+#define PORTIO_USART0_RX_PIN                          (1U)
+#define PORTIO_USART0_RX_PORT                         (gpioPortC)
 
-#define PORTIO_USART0_RTS_PIN                         (1U)
-#define PORTIO_USART0_RTS_PORT                        (gpioPortC)
-
-#define PORTIO_USART0_RX_PIN                          (6U)
-#define PORTIO_USART0_RX_PORT                         (gpioPortA)
-
-#define PORTIO_USART0_TX_PIN                          (5U)
-#define PORTIO_USART0_TX_PORT                         (gpioPortA)
+#define PORTIO_USART0_TX_PIN                          (0U)
+#define PORTIO_USART0_TX_PORT                         (gpioPortC)
 
 #define HAL_USART0_ENABLE                             (1)
 
-#define BSP_USART0_TX_PIN                             (5U)
-#define BSP_USART0_TX_PORT                            (gpioPortA)
+#define BSP_USART0_TX_PIN                             (0U)
+#define BSP_USART0_TX_PORT                            (gpioPortC)
 
-#define BSP_USART0_RX_PIN                             (6U)
-#define BSP_USART0_RX_PORT                            (gpioPortA)
-
-#define BSP_USART0_CTS_PIN                            (4U)
-#define BSP_USART0_CTS_PORT                           (gpioPortA)
-
-#define BSP_USART0_RTS_PIN                            (1U)
-#define BSP_USART0_RTS_PORT                           (gpioPortC)
+#define BSP_USART0_RX_PIN                             (1U)
+#define BSP_USART0_RX_PORT                            (gpioPortC)
 
 #define HAL_USART0_BAUD_RATE                          (115200UL)
 #define HAL_USART0_FLOW_CONTROL                       (HAL_USART_FLOW_CONTROL_NONE)
@@ -271,30 +253,30 @@
 // [USART1]$
 
 // $[USART2]
-#define PORTIO_USART2_CLK_PIN                         (2U)
+#define PORTIO_USART2_CLK_PIN                         (4U)
 #define PORTIO_USART2_CLK_PORT                        (gpioPortC)
 
-#define PORTIO_USART2_CS_PIN                          (3U)
+#define PORTIO_USART2_CS_PIN                          (5U)
 #define PORTIO_USART2_CS_PORT                         (gpioPortC)
 
-#define PORTIO_USART2_RX_PIN                          (1U)
+#define PORTIO_USART2_RX_PIN                          (3U)
 #define PORTIO_USART2_RX_PORT                         (gpioPortC)
 
-#define PORTIO_USART2_TX_PIN                          (0U)
+#define PORTIO_USART2_TX_PIN                          (2U)
 #define PORTIO_USART2_TX_PORT                         (gpioPortC)
 
 #define HAL_USART2_ENABLE                             (1)
 
-#define BSP_USART2_MOSI_PIN                           (0U)
+#define BSP_USART2_MOSI_PIN                           (2U)
 #define BSP_USART2_MOSI_PORT                          (gpioPortC)
 
-#define BSP_USART2_MISO_PIN                           (1U)
+#define BSP_USART2_MISO_PIN                           (3U)
 #define BSP_USART2_MISO_PORT                          (gpioPortC)
 
-#define BSP_USART2_CLK_PIN                            (2U)
+#define BSP_USART2_CLK_PIN                            (4U)
 #define BSP_USART2_CLK_PORT                           (gpioPortC)
 
-#define BSP_USART2_CS_PIN                             (3U)
+#define BSP_USART2_CS_PIN                             (5U)
 #define BSP_USART2_CS_PORT                            (gpioPortC)
 
 #define HAL_USART2_FREQUENCY                          (1000000UL)
@@ -319,7 +301,6 @@
 #if defined(_SILICON_LABS_MODULE)
 #include "sl_module.h"
 #endif
-
 
 #endif /* HAL_CONFIG_H */
 

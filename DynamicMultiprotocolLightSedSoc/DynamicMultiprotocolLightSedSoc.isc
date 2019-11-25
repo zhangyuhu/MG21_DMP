@@ -504,10 +504,10 @@ callbacks:emberAfPreMessageSendCallback
 callbacks:emberAfPreZDOMessageReceivedCallback
 callbacks:emberAfTrustCenterJoinCallback
 callbacks:emberAfHalButtonIsrCallback
-callbacks:emberAfPluginIdleSleepOkToSleepCallback
 callbacks:emberAfPluginIdentifyStopFeedbackCallback
 callbacks:emberAfPluginIdentifyStartFeedbackCallback
 callbacks:emberAfPluginNetworkSteeringCompleteCallback
+callbacks:emberAfPluginIdleSleepOkToSleepCallback
 }
 {setupId:zclCustomizer
 }
@@ -639,17 +639,16 @@ appPlugin:diagnostic-server,false
 appPlugin:dmp-demo-ui,false
 appPlugin:dmp-tuning,true
 
-appPlugin:dmp-ui-demo,true
+appPlugin:dmp-ui-demo,false
+appPlugin:dmp-ui-demo-stub,true
 
-appPlugin:dmp-ui-demo-stub,false
 appPlugin:door-lock-server,false
 appPlugin:dotdot-mfg-certs,false
 appPlugin:drlc,false
 appPlugin:drlc-server,false
 appPlugin:ecc-library-163k1,false
 appPlugin:ecc-library-283k1,false
-appPlugin:eeprom,true
-
+appPlugin:eeprom,false
 appPlugin:eeprom-powerdown,false
 appPlugin:electrical-measurement-server,false
 appPlugin:em4,false
@@ -886,7 +885,6 @@ AppPluginOption:EMBER_AF_PLUGIN_ZLL_COMMISSIONING_TOUCH_LINK_SECONDS_DELAY,3
 AppPluginOption:EMBER_AF_PLUGIN_ZLL_COMMISSIONING_SUB_DEVICE_TABLE_SIZE,1
 AppPluginOption:EMBER_AF_PLUGIN_ZLL_COMMISSIONING_SCAN_POWER_LEVEL,0
 AppPluginOption:EMBER_AF_PLUGIN_ZLL_COMMISSIONING_IDENTIFY_DURATION,65535
-AppPluginOption:EMBER_AF_PLUGIN_IDLE_SLEEP_STAY_AWAKE_WHEN_NOT_JOINED,true
 AppPluginOption:EMBER_AF_PLUGIN_MICRIUM_RTOS_POLL_CLI,true
 AppPluginOption:EMBER_AF_PLUGIN_MICRIUM_RTOS_SLEEP_ENABLE,true
 AppPluginOption:EMBER_AF_PLUGIN_BLE_MAX_CONNECTIONS,5

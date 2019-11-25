@@ -146,24 +146,9 @@
 			<locationURI>STUDIO_SDK_LOC/protocol/zigbee/app/framework/plugin-soc/dmp-tuning/dmp-tuning.c</locationURI>
 		</link>
 		<link>
-			<name>dmp-ui-demo/dmp-ui.c</name>
+			<name>dmp-ui-demo-stub/dmp-ui-stub.c</name>
 			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/protocol/zigbee/app/framework/plugin/dmp-ui-demo/dmp-ui.c</locationURI>
-		</link>
-		<link>
-			<name>eeprom/eeprom-afv2.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/util/plugin/plugin-afv2/eeprom/eeprom-afv2.c</locationURI>
-		</link>
-		<link>
-			<name>eeprom/eeprom-cli.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/util/plugin/plugin-common/eeprom/eeprom-cli.c</locationURI>
-		</link>
-		<link>
-			<name>eeprom/eeprom.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/util/plugin/plugin-common/eeprom/eeprom.c</locationURI>
+			<locationURI>STUDIO_SDK_LOC/protocol/zigbee/app/framework/plugin/dmp-ui-demo-stub/dmp-ui-stub.c</locationURI>
 		</link>
 		<link>
 			<name>efr32/assert-crash-handlers.c</name>

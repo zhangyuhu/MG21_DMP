@@ -1210,32 +1210,6 @@
 
 /** @} */ // end group plugin-dmp-tuning
 
-/** @addtogroup plugin-eeprom Plugin Commands: EEPROM
- * @ingroup cli
- * The EEPROM plugin provides CLI commands to display details about the current
- * EEPROM part.
- * 
- * @{
- */
-
-/** @brief <b>plugin eeprom data-print [offset:4] </b>
- *   - <i>Print raw bytes stored in the EEPROM</i>
- *     - offset - INT32U - The offset within the EEPROM to print.
- */
-#define EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_EEPROM_PLUGIN_EEPROM_DATA_PRINT
-
-/** @brief <b>plugin eeprom info </b>
- *   - <i>Print detailed info about the EEPROM part.</i>
- */
-#define EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_EEPROM_PLUGIN_EEPROM_INFO
-
-/** @brief <b>plugin eeprom status </b>
- *   - <i>Print the state of the EEPROM driver.</i>
- */
-#define EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_EEPROM_PLUGIN_EEPROM_STATUS
-
-/** @} */ // end group plugin-eeprom
-
 /** @addtogroup plugin-end-device-support Plugin Commands: End Device Support
  * @ingroup cli
  * The End Device Support plugin contributes commands for controlling the
@@ -1650,16 +1624,6 @@
  */
 
 /** @} */ // end group plugin-dmp-tuning
-
-/** @addtogroup plugin-eeprom Plugin Commands: EEPROM
- * @ingroup cli
- * The EEPROM plugin provides CLI commands to display details about the current
- * EEPROM part.
- * 
- * @{
- */
-
-/** @} */ // end group plugin-eeprom
 
 /** @addtogroup plugin-end-device-support Plugin Commands: End Device Support
  * @ingroup cli

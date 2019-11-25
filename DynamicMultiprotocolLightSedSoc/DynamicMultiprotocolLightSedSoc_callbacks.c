@@ -544,7 +544,7 @@ void lcdMainMenuDisplayEventHandler(void)
 {
   emberEventControlSetInactive(lcdMainMenuDisplayEventControl);
 
-  dmpUiClrLcdDisplayMainScreen();
+//  dmpUiClrLcdDisplayMainScreen();
 }
 
 /** @brief Stack Status

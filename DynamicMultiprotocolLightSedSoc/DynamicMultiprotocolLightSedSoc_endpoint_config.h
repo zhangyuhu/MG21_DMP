@@ -186,7 +186,6 @@ const EmberAfGenericClusterFunction emberAfFuncArrayOnOffClusterServer[] = { (Em
 
 
 #define EMBER_AF_GENERATED_PLUGIN_INIT_FUNCTION_DECLARATIONS \
-  void emberAfPluginEepromInitCallback(void); \
   void emberAfPluginZllCommissioningCommonInitCallback(void); \
   void emberAfPluginReportingInitCallback(void); \
   void emberAfPluginDmpTuningInitCallback(void); \
@@ -197,7 +196,6 @@ const EmberAfGenericClusterFunction emberAfFuncArrayOnOffClusterServer[] = { (Em
 
 
 #define EMBER_AF_GENERATED_PLUGIN_INIT_FUNCTION_CALLS \
-  emberAfPluginEepromInitCallback(); \
   emberAfPluginZllCommissioningCommonInitCallback(); \
   emberAfPluginReportingInitCallback(); \
   emberAfPluginDmpTuningInitCallback(); \

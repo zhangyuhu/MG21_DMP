@@ -82,9 +82,6 @@
 #define EMBER_CALLBACK_PRE_ZDO
 #define EMBER_CALLBACK_TRUST_CENTER_JOIN
 #define EMBER_CALLBACK_HAL_BUTTON_ISR
-#define EMBER_CALLBACK_EEPROM_INIT
-#define EMBER_CALLBACK_EEPROM_NOTE_INITIALIZED_STATE
-#define EMBER_CALLBACK_EEPROM_SHUTDOWN
 #define EMBER_CALLBACK_POLL_COMPLETE
 #define EMBER_APPLICATION_HAS_POLL_COMPLETE_HANDLER
 #define EMBER_CALLBACK_PRE_NCP_RESET
@@ -254,13 +251,8 @@
 // User options for plugin DMP Tuning and Testing
 #define EMBER_AF_PLUGIN_DMP_TUNING_PROFILE_BALANCED
 
-// Use this macro to check if Dynamic Multiprotocol UI Demo Code plugin is included
-#define EMBER_AF_PLUGIN_DMP_UI_DEMO
-
-// Use this macro to check if EEPROM plugin is included
-#define EMBER_AF_PLUGIN_EEPROM
-// User options for plugin EEPROM
-#define EMBER_AF_PLUGIN_EEPROM_PARTIAL_WORD_STORAGE_COUNT 2
+// Use this macro to check if Dynamic Multiprotocol UI Demo Code Stub plugin is included
+#define EMBER_AF_PLUGIN_DMP_UI_DEMO_STUB
 
 // Use this macro to check if Ember Minimal Printf plugin is included
 #define EMBER_AF_PLUGIN_EMBER_MINIMAL_PRINTF
@@ -295,7 +287,6 @@
 // Use this macro to check if Idle/Sleep plugin is included
 #define EMBER_AF_PLUGIN_IDLE_SLEEP
 // User options for plugin Idle/Sleep
-#define EMBER_AF_PLUGIN_IDLE_SLEEP_STAY_AWAKE_WHEN_NOT_JOINED
 #define EMBER_AF_PLUGIN_IDLE_SLEEP_MINIMUM_SLEEP_DURATION_MS 5
 #define EMBER_AF_PLUGIN_IDLE_SLEEP_BACKOFF_SLEEP_MS 0
 
@@ -470,9 +461,6 @@
 
 // API dmp-tuning from DMP Tuning and Testing plugin
 #define EMBER_AF_API_DMP_TUNING "../../../../../../SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/Siliconlabs_DMP_SDK/protocol/zigbee/app/framework/plugin-soc/dmp-tuning/dmp-tuning.h"
-
-// API eeprom from EEPROM plugin
-#define EMBER_AF_API_EEPROM "../../../../../../SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/Siliconlabs_DMP_SDK/util/plugin/plugin-common/eeprom/eeprom.h"
 
 // API find-and-bind-target from Find and Bind Target plugin
 #define EMBER_AF_API_FIND_AND_BIND_TARGET "../../../../../../SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/Siliconlabs_DMP_SDK/protocol/zigbee/app/framework/plugin/find-and-bind-target/find-and-bind-target.h"
