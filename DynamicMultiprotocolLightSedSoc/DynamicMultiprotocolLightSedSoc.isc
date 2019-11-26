@@ -1,5 +1,5 @@
 #ISD afv6
-# Simplicity Studio version: 5.10.2.201907251123-1514
+# Simplicity Studio version: 5.12.1.201911130818-1544
 FrameworkDirectory:protocol\zigbee\app\framework
 
 appId: znet
@@ -112,7 +112,21 @@ on
 on
 area name off
 appSerial=1
+compile,DEBUG
+compile,EMBER_AF_PLUGIN_DMP_TUNING
+compile,EMBER_AF_PLUGIN_DMP_UI_DEMO_STUB
+compile,EMBER_AF_PLUGIN_END_DEVICE_SUPPORT
+compile,EMBER_AF_PLUGIN_IDLE_SLEEP
+compile,EMBER_AF_PLUGIN_MICRIUM_RTOS
+compile,EMBER_AF_PLUGIN_SCAN_DISPATCH
 compile,OTA_BOOTLOAD_CLUSTER
+enable,DEBUG
+enable,EMBER_AF_PLUGIN_DMP_TUNING
+enable,EMBER_AF_PLUGIN_DMP_UI_DEMO_STUB
+enable,EMBER_AF_PLUGIN_END_DEVICE_SUPPORT
+enable,EMBER_AF_PLUGIN_IDLE_SLEEP
+enable,EMBER_AF_PLUGIN_MICRIUM_RTOS
+enable,EMBER_AF_PLUGIN_SCAN_DISPATCH
 enable,OTA_BOOTLOAD_CLUSTER
 }
 {setupId:eventConfiguration
@@ -239,8 +253,8 @@ boolMap:HandleUnsupportedZdoRequests = false
 boolMap:HandleEndpointZdoRequests = false
 boolMap:HandleBindingZdoRequests = false
 boolMap:LegacyCli = false
-boolMap:AddCustomCli = true
-boolMap:IncludeCommandDescriptions = true
+boolMap:AddCustomCli = false
+boolMap:IncludeCommandDescriptions = false
 boolMap:GenerateCallbacksFile = false
 boolMap:ManufacturerCodeDefaultIsZero = true
 beginAttrList:OPTIONAL
@@ -542,7 +556,7 @@ intMap:FirstButton = 1
 intMap:SecondButton = 2
 configuredNetworkSecurity:Primary|ZIGBEE_PRO=Z3
 configuredNetworkZigbeeDeviceType:Primary|ZIGBEE_PRO=ZA_SLEEPY_END_DEVICE
-CliCommandSet:Full
+CliCommandSet:None
 CliCommands:compile,plugin counter print-counter-type
 CliCommands:compile,plugin counters clear
 CliCommands:compile,plugin counters print
@@ -885,8 +899,6 @@ AppPluginOption:EMBER_AF_PLUGIN_ZLL_COMMISSIONING_TOUCH_LINK_SECONDS_DELAY,3
 AppPluginOption:EMBER_AF_PLUGIN_ZLL_COMMISSIONING_SUB_DEVICE_TABLE_SIZE,1
 AppPluginOption:EMBER_AF_PLUGIN_ZLL_COMMISSIONING_SCAN_POWER_LEVEL,0
 AppPluginOption:EMBER_AF_PLUGIN_ZLL_COMMISSIONING_IDENTIFY_DURATION,65535
-AppPluginOption:EMBER_AF_PLUGIN_MICRIUM_RTOS_POLL_CLI,true
-AppPluginOption:EMBER_AF_PLUGIN_MICRIUM_RTOS_SLEEP_ENABLE,true
 AppPluginOption:EMBER_AF_PLUGIN_BLE_MAX_CONNECTIONS,5
 AppPluginOption:EMBER_BROADCAST_TABLE_SIZE,35
 AppPluginOption:EMBER_AF_PLUGIN_OTA_CLIENT_POLICY_IMAGE_TYPE_ID,4

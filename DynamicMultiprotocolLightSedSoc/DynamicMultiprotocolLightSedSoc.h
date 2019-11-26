@@ -312,7 +312,7 @@
 #define EMBER_AF_PLUGIN_MICRIUM_RTOS
 // User options for plugin Micrium RTOS
 #define EMBER_AF_PLUGIN_MICRIUM_RTOS_CPU_USAGE
-#define EMBER_AF_PLUGIN_MICRIUM_RTOS_POLL_CLI
+#define EMBER_AF_PLUGIN_MICRIUM_RTOS_SLEEP_ENABLE
 #define EMBER_AF_PLUGIN_MICRIUM_RTOS_ZIGBEE_STACK_SIZE 1400
 
 // Use this macro to check if Network Steering plugin is included
